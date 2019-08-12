@@ -7,11 +7,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Login to Your Account</h1><br>
+          <form method="post" action="backend/login.php">
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+          </form>
+        </div>
+      </div>
+      </div>
+
+
+<div class="d-inline">
+ <div class="pull-right">
+      <div><button style="background-color: #26a65b" type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">Log in</button></div>
+      </div>
+</div>
+<div class="d-inline">
+  <h1 style="color: blue">Demo Form</h1>
+</div>
+
 <div class="panel panel-default">
   <div class="panel-body">
-    <h1 style="color: blue">Demo Form</h1>
     <hr>
     <br>  
 <form class="form-horizontal" action="backend/submit_form.php" method="post" enctype="multipart/form-data">
