@@ -32,7 +32,7 @@
 	<hr>      
 	  <table class="table table-bordered">
 		<thead>
-			
+			<th>Sl.no</th>
 			<th>Name</th>
 			<th>Gender</th>
 			<th>DOB</th>
@@ -55,9 +55,10 @@
 
 				$query = "select * from user_details";
 				$fire = mysqli_query($con,$query) or die(mysqli_error($con));
-
+				$loop = 1;
 				while($row = mysqli_fetch_array($fire)){ ?>
 					<tr>
+						<td><?php echo $loop ?></td>
 						<td><?php echo $row['name'] ?></td>
 						<td><?php echo $row['gender'] ?></td>
 						<td><?php echo $row['dob'] ?></td>
@@ -75,7 +76,10 @@
 
 					</tr>
 					
-			 <?php  } ?>
+			 <?php  
+			 		$loop++;
+				} 
+			?>
 			
 
 		</tbody>

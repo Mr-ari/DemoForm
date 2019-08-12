@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Sample Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -25,14 +25,19 @@
       </div>
 
 
-<div class="d-inline">
+<dir class="container">
+  <div class="d-inline">
  <div class="pull-right">
-      <div><button style="background-color: #26a65b" type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">Log in</button></div>
+      <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">Log in</button></div>
       </div>
 </div>
 <div class="d-inline">
   <h1 style="color: blue">Demo Form</h1>
 </div>
+
+
+</dir>
+
 
 <div class="panel panel-default">
   <div class="panel-body">
